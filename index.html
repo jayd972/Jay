@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jay Darji — Machine Learning Engineer</title>
+  <meta name="description"
+    content="Portfolio of Jay Darji — Machine Learning Engineer specializing in deep learning, NLP, computer vision, and signal processing. 3+ publications, 71+ citations.">
+  <meta property="og:title" content="Jay Darji — Machine Learning Engineer">
+  <meta property="og:description"
+    content="Data Scientist & ML Researcher with 2+ years of experience building end-to-end ML systems. Specialized in deep learning, NLP, and production ML solutions.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">JD<span class="logo-dot">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#publications" class="nav-link">Publications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-avatar animate-in">
+        <span>JD</span>
+      </div>
+      <h1 class="hero-title animate-in">Jay Darji</h1>
+      <p class="hero-role animate-in">Machine Learning Engineer</p>
+      <p class="hero-subtitle animate-in">
+        Building end-to-end ML systems with 2+ years of experience in deep learning, NLP, and signal processing.
+        Experienced in turning peer-reviewed research into production-ready solutions using Python, PyTorch, and AWS.
+      </p>
+      <div class="hero-buttons animate-in">
+        <a href="https://github.com/jayd972" target="_blank" rel="noopener" class="hero-btn hero-btn-dark">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/jayd972" target="_blank" rel="noopener" class="hero-btn hero-btn-blue">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+          LinkedIn
+        </a>
+        <a href="mailto:darjijay972@gmail.com" class="hero-btn hero-btn-green">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          Email
+        </a>
+        <a href="Jay_Darji_Resume.pdf" class="hero-btn hero-btn-dark" download>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Download Resume
+        </a>
+      </div>
+      <div class="hero-contact-info animate-in">
+        <span class="hero-info-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          darjijay972@gmail.com
+        </span>
+        <span class="hero-info-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          San Jose, California
+        </span>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title animate-in">About <span class="gradient-text">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text animate-in">
+          <p>
+            I'm a <strong>Machine Learning Engineer</strong> with 2+ years of experience building and deploying
+            end-to-end machine learning systems. I hold a Master's in Electrical Engineering (AI Focus) from
+            <strong>San Jose State University</strong> and a Bachelor's from <strong>IITRAM, Ahmedabad</strong>.
+          </p>
+          <p>
+            My work spans <strong>signal processing</strong>, <strong>data-centric modeling</strong>,
+            <strong>NLP</strong>, and <strong>computer vision</strong>. I specialize in transforming peer-reviewed
+            research findings into robust, production-ready ML solutions using Python, PyTorch, and AWS.
+          </p>
+          <p>
+            When I'm not training models, I'm exploring multi-agent AI systems, building LLM-powered tools,
+            and contributing to open-source projects that push the boundaries of what's possible with AI.
+          </p>
+        </div>
+        <div class="about-stats animate-in">
+          <div class="stat-card glass-card">
+            <div class="stat-number" data-count="3">0</div>
+            <div class="stat-label">Publications</div>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-number" data-count="70">0</div>
+            <div class="stat-label">Citations</div>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-number" data-count="15">0</div>
+            <div class="stat-label">Repositories</div>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-number" data-count="2">0</div>
+            <div class="stat-label">Years Exp.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title animate-in">Work <span class="gradient-text">Experience</span></h2>
+      <div class="timeline">
+        <div class="timeline-item animate-in">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Machine Learning Research Assistant</h3>
+                <p class="timeline-company">San Jose State University</p>
+              </div>
+              <span class="timeline-date">Jun 2025 – Present</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Developed an XAI system using DINOv3 ViT, achieving <strong>83.25% accuracy</strong> on 4-class brain
+                tumor classification</li>
+              <li>Implemented Occlusion, Deepdream, and Lucent visualizations to interpret a 256D classifier feature
+                space</li>
+              <li>Built a PyTorch & GPT-4o-mini pipeline to synthesize visual XAI data into natural language clinical
+                reports</li>
+              <li>Architected a multi-agent framework for automated feature extraction, model training, and report
+                synthesis</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-in">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Data Scientist</h3>
+                <p class="timeline-company">Rhenix Lifesciences LLP, Hyderabad</p>
+              </div>
+              <span class="timeline-date">Sep 2022 – Jun 2024</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Built hybrid CNN-LSTM model for CGM forecasting, achieving <strong>10 mg/dL RMSE</strong> for
+                15-minute horizons</li>
+              <li>Outperformed published benchmarks with <strong>17 mg/dL RMSE</strong> for 60-minute forecasts using
+                time-series data</li>
+              <li>Built Random Forest model for HRV-based sleep classification, reaching <strong>93% accuracy</strong>
+                and 0.96 AUC</li>
+              <li>Designed novel binning-based imputation method, improving RMSE in 70–90% of time-series cases</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-in">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Full Stack Software Developer</h3>
+                <p class="timeline-company">Cognizant Technology Solutions, Bengaluru</p>
+              </div>
+              <span class="timeline-date">Dec 2021 – Apr 2022</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Developed and maintained Java Spring Boot applications, enhancing system performance and scalability
+              </li>
+              <li>Designed and integrated REST APIs, ensuring efficient front-end and backend communication</li>
+              <li>Optimized MySQL queries, cutting execution time by <strong>20%</strong> through indexing and query
+                tuning</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-in">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Machine Learning Intern</h3>
+                <p class="timeline-company">IITRAM, Ahmedabad</p>
+              </div>
+              <span class="timeline-date">Jun 2019 – Aug 2019</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Trained an ensemble bagged trees model for classifying sleep disorders, attaining <strong>95%
+                  accuracy</strong></li>
+              <li>Mentored 10 students on experimental design and ML techniques; co-authored peer-reviewed research</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title animate-in">Featured <span class="gradient-text">Projects</span></h2>
+      <div class="projects-grid">
+        <div class="project-card glass-card animate-in">
+          <div class="project-icon">🧠</div>
+          <h3>Multi-Agent Explainable Tumor Detection</h3>
+          <p>XAI framework using DINOv3 ViT for brain tumor classification with automated clinical report generation via
+            multi-agent architecture.</p>
+          <div class="project-tags">
+            <span>PyTorch</span><span>GPT-4o</span><span>XAI</span><span>Computer Vision</span>
+          </div>
+          <a href="https://github.com/jayd972/Multi-Agent-dinov3-explainable-tumor-detection-framework" target="_blank"
+            rel="noopener" class="project-link">
+            View on GitHub →
+          </a>
+        </div>
+
+        <div class="project-card glass-card animate-in">
+          <div class="project-icon">🤖</div>
+          <h3>Multi-Agent LLM QA for Android</h3>
+          <p>Automated Android QA testing using multi-agent LLM system that understands UI context and generates
+            intelligent test scenarios.</p>
+          <div class="project-tags">
+            <span>LLMs</span><span>Multi-Agent</span><span>Automation</span><span>Python</span>
+          </div>
+          <a href="https://github.com/jayd972/Multi-Agent-LLM-QA-System-for-Android-Automation" target="_blank"
+            rel="noopener" class="project-link">
+            View on GitHub →
+          </a>
+        </div>
+
+        <div class="project-card glass-card animate-in">
+          <div class="project-icon">📄</div>
+          <h3>NLP Resume Matching App</h3>
+          <p>Web app matching resumes to job descriptions using SBERT, OpenAI, and Gemini embeddings with cosine
+            similarity ranking and LLM-generated fit summaries.</p>
+          <div class="project-tags">
+            <span>NLP</span><span>SBERT</span><span>Gemini</span><span>Streamlit</span>
+          </div>
+          <a href="https://github.com/jayd972/Resume-matching-app" target="_blank" rel="noopener" class="project-link">
+            View on GitHub →
+          </a>
+        </div>
+
+        <div class="project-card glass-card animate-in">
+          <div class="project-icon">💰</div>
+          <h3>Financial AI Agent</h3>
+          <p>AI-powered financial analysis agent built with Phidata framework for intelligent market insights and
+            financial data processing.</p>
+          <div class="project-tags">
+            <span>AI Agents</span><span>Phidata</span><span>Finance</span><span>Python</span>
+          </div>
+          <a href="https://github.com/jayd972/Financial-AI-agent-Using-Phidata" target="_blank" rel="noopener"
+            class="project-link">
+            View on GitHub →
+          </a>
+        </div>
+
+        <div class="project-card glass-card animate-in">
+          <div class="project-icon">📚</div>
+          <h3>ChatPDF with Amazon Bedrock</h3>
+          <p>PDF question-answering system using Amazon Bedrock, FAISS vector store, and Claude/LLaMA2 models for
+            intelligent document interaction.</p>
+          <div class="project-tags">
+            <span>AWS Bedrock</span><span>FAISS</span><span>RAG</span><span>LLMs</span>
+          </div>
+          <a href="https://github.com/jayd972/ChatPDF-with-Amazon-Bedrock-FAISS-Ask-Questions-from-PDFs-using-Claude-or-LLaMA2"
+            target="_blank" rel="noopener" class="project-link">
+            View on GitHub →
+          </a>
+        </div>
+
+        <div class="project-card glass-card animate-in">
+          <div class="project-icon">🏊</div>
+          <h3>Swim Pose Estimation</h3>
+          <p>Computer vision system for estimating swimmer body poses from video, enabling technique analysis and
+            performance optimization.</p>
+          <div class="project-tags">
+            <span>Computer Vision</span><span>Pose</span><span>Deep Learning</span><span>Jupyter</span>
+          </div>
+          <a href="https://github.com/jayd972/Swim-Pose-Estimation" target="_blank" rel="noopener" class="project-link">
+            View on GitHub →
+          </a>
+        </div>
+      </div>
+      <div class="projects-more animate-in">
+        <a href="https://github.com/jayd972?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline">
+          View All 16 Repositories →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section class="section section-alt" id="publications">
+    <div class="container">
+      <h2 class="section-title animate-in">Research <span class="gradient-text">Publications</span></h2>
+      <div class="publications-list">
+        <div class="pub-card glass-card animate-in">
+          <div class="pub-citation-count">63 citations</div>
+          <h3>Automated identification of sleep disorders using wavelet-based features extracted from electrooculogram
+            and electromyogram signals</h3>
+          <p class="pub-journal">Computers in Biology and Medicine, 2022</p>
+          <a href="https://doi.org/10.1016/j.compbiomed.2022.105224" target="_blank" rel="noopener" class="pub-doi">
+            DOI: 10.1016/j.compbiomed.2022.105224 ↗
+          </a>
+        </div>
+
+        <div class="pub-card glass-card animate-in">
+          <div class="pub-citation-count">7 citations</div>
+          <h3>Handling missing data in the time-series data from wearables</h3>
+          <p class="pub-journal">IntechOpen Book Chapter, 2023</p>
+          <a href="https://doi.org/10.5772/intechopen.1002536" target="_blank" rel="noopener" class="pub-doi">
+            DOI: 10.5772/intechopen.1002536 ↗
+          </a>
+        </div>
+
+        <div class="pub-card glass-card animate-in">
+          <div class="pub-citation-count">1 citation</div>
+          <h3>Efficient use of binned data for imputing univariate time-series data</h3>
+          <p class="pub-journal">Frontiers in Big Data, 2024</p>
+          <a href="https://doi.org/10.3389/fdata.2024.1422650" target="_blank" rel="noopener" class="pub-doi">
+            DOI: 10.3389/fdata.2024.1422650 ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title animate-in">Technical <span class="gradient-text">Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-category glass-card animate-in">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+            Languages &amp; Tools
+          </h3>
+          <div class="skill-chips">
+            <span class="chip">Python</span>
+            <span class="chip">Java</span>
+            <span class="chip">SQL</span>
+            <span class="chip">MATLAB</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Flask</span>
+            <span class="chip">Git/GitHub</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card animate-in">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3" />
+              <path d="M12 1v6m0 6v6m-7-3.5l5.2-3m1.6-1l5.2-3M5 5.5l5.2 3m1.6 1l5.2 3" />
+            </svg>
+            ML / DL Frameworks
+          </h3>
+          <div class="skill-chips">
+            <span class="chip">PyTorch</span>
+            <span class="chip">TensorFlow</span>
+            <span class="chip">Scikit-learn</span>
+            <span class="chip">Transformers</span>
+            <span class="chip">Hugging Face</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card animate-in">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+            </svg>
+            Domains
+          </h3>
+          <div class="skill-chips">
+            <span class="chip">Machine Learning</span>
+            <span class="chip">NLP</span>
+            <span class="chip">LLMs / RAG</span>
+            <span class="chip">Computer Vision</span>
+            <span class="chip">Signal Processing</span>
+            <span class="chip">Time-Series</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card animate-in">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+            Cloud &amp; Visualization
+          </h3>
+          <div class="skill-chips">
+            <span class="chip">AWS</span>
+            <span class="chip">Amazon Bedrock</span>
+            <span class="chip">Tableau</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">Streamlit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title animate-in">Get in <span class="gradient-text">Touch</span></h2>
+      <div class="contact-content animate-in">
+        <p class="contact-text">
+          I'm always open to new opportunities, collaborations, and interesting conversations about AI.
+          Feel free to reach out!
+        </p>
+        <a href="mailto:darjijay972@gmail.com" class="btn btn-primary btn-large">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          darjijay972@gmail.com
+        </a>
+        <div class="contact-socials">
+          <a href="https://github.com/jayd972" target="_blank" rel="noopener" class="contact-social-link glass-card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/jayd972" target="_blank" rel="noopener"
+            class="contact-social-link glass-card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://scholar.google.com/citations?user=GKqJYZ4AAAAJ&hl=en" target="_blank" rel="noopener"
+            class="contact-social-link glass-card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" />
+            </svg>
+            <span>Google Scholar</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Jay Darji. Built with passion and caffeine.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
