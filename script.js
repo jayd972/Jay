@@ -197,6 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function animateStats() {
     statNumbers.forEach(el => {
       const target = parseInt(el.getAttribute('data-count'));
+      const suffix = el.getAttribute('data-suffix') !== null ? el.getAttribute('data-suffix') : (target > 10 ? '+' : '');
       const duration = 2000;
       const start = performance.now();
 
@@ -206,11 +207,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Ease out cubic
         const eased = 1 - Math.pow(1 - progress, 3);
         const current = Math.round(eased * target);
-        el.textContent = current + (target > 10 ? '+' : '');
+        el.textContent = current + suffix;
         if (progress < 1) {
           requestAnimationFrame(updateCount);
         } else {
-          el.textContent = target + '+';
+          el.textContent = target + suffix;
         }
       }
 
